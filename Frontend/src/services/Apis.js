@@ -1,7 +1,7 @@
 
 export const fetchFacilitiesAccordingToCountries = async (page) => {
     try {
-        const response = await fetch(`/api/analytics/locations?page=${page}`,{
+        const response = await fetch(`https://clinical-survey.onrender.com/api/analytics/locations?page=${page}`,{
             credentials:'include'
         }); 
         const data = response.json();
@@ -14,7 +14,7 @@ export const fetchFacilitiesAccordingToCountries = async (page) => {
 
 export const fetchDemographics = async () => {
     try {
-        const response = await fetch('/api/analytics/demographics',{
+        const response = await fetch('https://clinical-survey.onrender.com/api/analytics/demographics',{
             credentials:'include'
         }); 
         const data = response.json();
@@ -26,7 +26,7 @@ export const fetchDemographics = async () => {
 };
 export const fetchTopCitiesByCountOfFacilities = async () => {
     try {
-        const response = await fetch('/api/analytics/trials-per-city',{
+        const response = await fetch('https://clinical-survey.onrender.com/api/analytics/trials-per-city',{
             credentials:'include'
         }); 
         const data = response.json();
@@ -39,7 +39,7 @@ export const fetchTopCitiesByCountOfFacilities = async () => {
 
 export const fetchClinicalTrialsData = async () => {
     try {
-        const response = await fetch('/api/analytics/getClinicalTrialsData',{
+        const response = await fetch('https://clinical-survey.onrender.com/api/analytics/getClinicalTrialsData',{
             credentials:'include'
         }); 
         const data = response.json();

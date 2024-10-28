@@ -12,7 +12,7 @@ connectDB();
 const app = express();
 
 app.use(cors({
-    origin: "https://ayush-clinical.vercel.app",
+    origin: "https://ayush-clinical.vercel.app/",
     credentials:'true',
 }))
 
